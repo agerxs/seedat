@@ -25,6 +25,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('voyager.dashboard') }}">Tableau de bord</a>
             </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('voyager.logout') }}">Déconnexion</a>
+                </li>
             @else
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('voyager.login') }}">Connexion</a>
