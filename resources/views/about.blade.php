@@ -2,7 +2,7 @@
 @section('header')
     <div class="row">
         <div class="col-lg-12 mx-0 text-center">
-            <img src="images/a-propos.png" alt="" height="300px">
+            <img src="images/a-propos.jpg" alt="" height="300px">
         </div>
     </div>
 @endsection
