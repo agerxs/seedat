@@ -56,6 +56,40 @@
                 </div><!-- /.row -->
             </div>
         </div>
+        <div class="row p-5">
+            <div class="col-lg-12 bg-white " style="border-radius: 50px">
+                <div class="row text-center"><div class="col-lg-12">
+                        <h2 class="display-5 secondary font-weight-bold">Innovons ensemble ! </h2>
+                        <img src="images/header1.jpg" alt="" width="100%">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-lg-12 bg-white " style="border-radius: 50px">
+                <div class="row text-center "><div class="col-lg-12">
+                        <h2 class="display-5 secondary font-weight-bold">Notre arsenal ! </h2>
+                        <p class="primary" style="font-size: 16px">
+                            Nous disposons de milliers de véhicules repartis dans les 10 communes
+                            d’Abidjan (Bassam, Port Bouet, Koumassi, Marcory, Treichville, Plateau,
+                            Cocody, Adjamé, Bingerville, Yopougon)
+                        </p>
+                        <p class="primary" style="font-size: 16px">
+                            Nos véhicules parcourent toute la ville d’Abidjan et transportent environ 100 000 personnes chaque jour.
+                        </p>
+                        <p class="primary" style="font-size: 16px">
+                            Ils sont également équipés de supports connectés qui nous permette (24H/24 et 7Jr/7)
+                            de mesurer le nombre de personnes en contact avec nos supports tout en ayant
+                            des chiffres exacts (nombres de scan à l’heure près,de prospectus recuperés et
+                            bien entendu le taux d’engagement par commune selon la campagne)
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </div>
 @endsection
