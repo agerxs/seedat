@@ -1,96 +1,60 @@
-@extends('layout.mainlayout')
+@extends('layout.frontlayout')
+@section('header')
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="height: 500px;overflow: hidden">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/header2.png" alt="First slide">
+                {{--<div class="carousel-caption d-none d-md-block">
+                    <h5>...</h5>
+                    <p>...</p>
+                </div>--}}
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/header1.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/header1.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-image: url('images/prev.png')"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="background-image: url('images/next.png')"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+@endsection
+
 @section('content')
 <div class="album text-muted">
     <div class="container">
         <div class="row p-5">
-            <div class="col-lg-12  shadow p-5 bg-white " style="border-radius: 50px">
+            <div class="col-lg-12 bg-white " style="border-radius: 50px">
                 <div class="row text-center"><div class="col-lg-12">
-                <h2 class="display-6 primary font-weight-bold">Simulez une campagne</h2>
-                <h6>en fonction de vos objectifs marketing</h6>
+                <h2 class="display-5 primary font-weight-bold">Où tout a commencé...</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 text-center primary font-weight-bold">
-                        <img class="bd-placeholder-img rounded-circle" src="/images/1.jpg" height="50"  alt="1"/>
-                        <h6 class="secondary font-weight-bold text-center pt-2">Offre promotionnelle d'un bien ou service</h6>
+                    <div class="col-lg-12 text-center primary" style="font-size: 16px">
                         <p>
-                            -50% Vente telephone portable. <br>
-                            Livraison de colis partout
-                            en Côte d’Ivoire 100ère livraisons
+                            L’un de nos 2 co-fondateur passait BAC pour la seconde fois, avec tout le stress, l’anxiétéet la peur, d’un plausible et similaire échec...
+                            <br><br>Exactement pendant la période des préparations, avant la composition finale, il se sentait plus ou moinsprêt à affronter les examens finaux, il se rendait chaque matin aux cours de renforcementauxquels il était fortement impliqué, il n’hésitait pas également à traiter tous les sujets possible
+                            afin de mettre toutes les chances de son coté.<br><br>
+                            Jusqu’à ce qu’il tombe sur cette annonce qui était dans l’un des transports en commun qu’il prenait
+                            presque tous les matins et qui aurait pu lui échapper.
+                            <br><br>Sur cette annonce on pouvait lire.
+                            « Le BAC c’est 30% de connaissance et 70% de maitrise de soi »<br><br>
+                            C’était la première fois qu’une annonce avait autant d’impact sur lui de surcroit dans un transport en commun...il a donc décidé un jour de contacter l’annonceur pour en savoir plus...
+                            <br><br>Si nous avons rendu ce canal accéssible aujourd’hui c’est uniquementparce que cette annonce a sans doute changé le cours de sa vie,
+                            lui a permis de reussir à son BAC mais également à gérer certaines situations
+                            de stress et d’anxiété lié au travail et à la vie quotidienne...
                         </p>
-
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 text-center primary font-weight-bold">
-                        <img class="bd-placeholder-img rounded-circle" src="/images/2.jpg" height="50"  alt="1"/><h6 class="secondary font-weight-bold text-center pt-2">Passer une annonce</h6>
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 text-center primary font-weight-bold">
-                        <img class="bd-placeholder-img rounded-circle" src="/images/3.jpg" height="50"  alt="1"/><h6 class="secondary font-weight-bold text-center pt-2">Publicité</h6>
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 
                     </div><!-- /.col-lg-4 -->
                 </div><!-- /.row -->
             </div>
-        </div>
-        <div class="row p-5 ">
-        <div class="col-lg-12">
-            <h2 class="font-weight-bold display-6 text-center primary pb-5">Commandez vos espaces partout en Abidjan</h2>
-            <div class="col-lg-12  shadow p-5 bg-white border-rounded">
-                <div class="row font-weight-bold">
-                    <div class="col-lg-12">
-                        <h4 class="font-weight-bold text-center mb-5 primary">Réservez jusqu'à 100 véhicules dans toutes les communes d'Abidjan</h4>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="secondary">Commune</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1" class="secondary">Nombre de véhicules</label>
-                                        <input type="number" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6"><div class="form-group">
-                                        <label for="exampleInputPassword1" class="secondary">Votre cible</label>
-                                        <input type="text" class="form-control" id="exampleInputPassword1">
-                                    </div></div>
-                            </div>
-                            <!--<div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>-->
-
-                    </div>
-                    <div class="col-lg-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="secondary">Objectifs Marketing</label>
-                                <input type="number" class="form-control primary" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                <small id="emailHelp" class="form-text text-muted">Lorem Ipsum.</small>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1" class="secondary">Début de la campagne</label>
-                                        <input type="date" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6"><div class="form-group">
-                                        <label for="exampleInputPassword1" class="secondary">Fin de la campagne</label>
-                                        <input type="date" class="form-control" id="exampleInputPassword1">
-                                    </div></div>
-                            </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
-                    </form>
-
-                    </div>
-
-                </div></div>
-        </div>
         </div>
     </div>
 </div>

@@ -10,18 +10,22 @@
 
         <ul class="navbar-nav mr-auto my-2 my-lg-0 float-right primary">
             <li class="nav-item">
-                <a class="nav-link" href="#">Simulez une campagne <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Devenez seedriver</a>
+                <a class="nav-link" href="{{route('home')}}">Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Innovons ensemble!</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Qui sommes-nous?</a>
+                <a class="nav-link" href="{{route('about')}}">Qui sommes-nous?</a>
             </li>
-            @if (Auth::check())
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('simulate')}}">Simulez une campagne <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Innovons ensemble!</a>
+            </li>
+
+{{--            @if (Auth::check())
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('voyager.dashboard') }}">Tableau de bord</a>
             </li>
@@ -37,7 +41,7 @@
                 <a class="nav-link" href="{{ route('register') }}">Inscription</a>
             </li>
 
-            @endif
+            @endif--}}
             <!--<li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown

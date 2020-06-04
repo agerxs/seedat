@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('guest');
     }
 
     /**
@@ -24,5 +24,15 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function simulateCampaign()
+    {
+        return view('sim_campagne');
+    }
+
+    public function about()
+    {
+        return view('about');
     }
 }
